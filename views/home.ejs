@@ -1,16 +1,36 @@
-<div class="container">
+<!-- This is the home page of the app-->
+<!-- <form method="GET">
 
-<h1>Oh Hello</h1>
-<h2>More exciting web page coming soon</h2>
-<h2>Check out the movies that I likes</h2>
+	<div class="container">
 
-  <% movies.forEach(function(m){%>
-  
-  <div>
-   <h3><%= m.Title %> (<%= m.Year %>)</h3>
-   <img src="<%= m.Poster %>">
+		<h1>Oh Hello</h1>
+		<h2>More exciting web page coming soon</h2>
+		<h2>Check out the movies that I likes</h2>
 
+		<% movies.forEach(function(m){%>
+
+			<div>
+			<h3><%= m.Title %> (<%= m.Year %>) </h3>
+			
+			<img src="<%= m.Poster %>">
+
+			</div>
+			<%});%>
+
+		</div>
+
+	</form>
+ -->
+
+	<form method='GET' action='/results'>
+  <div class="row">
+    <div class="col-8">
+      <div class="input-group mb-3">
+        <input class="form-control" type="text" name="movie" placeholder="Enter a movie title" />
+        <div class="input-group-append">
+          <input class="btn btn-primary" type="submit" value="Search Database" />
+        </div>
+      </div>
+    </div>
   </div>
-  <%});%>
-  
-</div>
+</form>
