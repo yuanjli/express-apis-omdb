@@ -1,0 +1,15 @@
+body {
+  margin: 25px auto;
+}
+form {
+  margin: 0 auto 50px auto;
+}
+hr {
+  background-color: black;
+}
+.header {
+  margin-bottom: 40px;
+}
+#logo:hover {
+  text-decoration: none;
+}
